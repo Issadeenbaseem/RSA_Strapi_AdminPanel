@@ -58,8 +58,8 @@
       "model": "user"
     },
     "sub_categories": {
-      "collection": "sub-category",
       "via": "advertisements",
+      "collection": "sub-category",
       "dominant": true
     },
     "advertisement_pictures": {

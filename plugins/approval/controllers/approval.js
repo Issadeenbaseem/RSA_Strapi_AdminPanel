@@ -18,7 +18,7 @@ module.exports = {
     // Add your own logic here.
 
     // Send 200 `ok`
-    ctx.send({message: 'ok'});
+    
 
 
   },
@@ -49,6 +49,8 @@ module.exports = {
     } else {
       entity = await strapi.services.advertisement.update({ id }, ctx.request.body);
     }
+
+    ctx.send({message: 'ok'});
 
    // return sanitizeEntity(entity, { model: strapi.models.advertisement });
   },

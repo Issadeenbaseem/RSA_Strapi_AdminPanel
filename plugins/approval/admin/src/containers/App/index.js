@@ -8,6 +8,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { NotFound } from 'strapi-helper-plugin';
+// clea
 // Utils
 import pluginId from '../../pluginId';
 // Containers
@@ -19,6 +20,8 @@ const App = () => {
   return (
     <div>
       <Switch>
+      
+       {/* <Route path={`/plugins/${pluginId}`} component={Admin} exact /> */}
         <Route path={`/plugins/${pluginId}`} component={HomePage} exact />
         <Route path={`/plugins/${pluginId}/:id`} component={ApplicationPage} exact />
         <Route component={NotFound} />

@@ -40,6 +40,30 @@
     },
     {
       "method": "GET",
+      "path": "/advertisements/advertisements_panding_count",
+      "handler": "advertisement.advertisements_panding_count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/advertisements/advertisements_approved_count",
+      "handler": "advertisement.advertisements_approved_count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/advertisements/advertisements_reject_count",
+      "handler": "advertisement.advertisements_reject_count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/advertisements/:id",
       "handler": "advertisement.findOne",
       "config": {

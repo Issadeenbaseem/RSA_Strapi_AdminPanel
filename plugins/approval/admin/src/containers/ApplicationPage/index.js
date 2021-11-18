@@ -82,7 +82,7 @@ class index extends Component {
 
     axios.put(`http://localhost:1337/Approval/${data.id}`, data).then((res) => {
       // this.getAll();
-      console.log(res);
+      // console.log(res);
     });
     strapi.notification.toggle({
       type: "success",

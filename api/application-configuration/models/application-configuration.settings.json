@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "application_configurations",
   "info": {
-    "name": "application_configuration"
+    "name": "application configuration",
+    "description": ""
   },
   "options": {
     "increments": true,
