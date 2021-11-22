@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "configuration_s",
   "info": {
-    "name": "configuration "
+    "name": "configuration",
+    "description": ""
   },
   "options": {
     "increments": true,

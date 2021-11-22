@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./app.css";
+
 
 export default class HomePage extends Component {
   constructor() {
@@ -72,22 +74,124 @@ export default class HomePage extends Component {
 
   render() {
     return (
-      <div className="container mt-4">
-        <div className="row">
-          <p>Advertisements Count : {this.state.count_advertisements} </p>
-          <br />
-          <p>Customers Count : {this.state.count_customers} </p>
-          <br />
-          <p>Category Count : {this.state.count_categories} </p>
-          <br />
-          <p>Panding Count : {this.state.count_panding} </p>
-          <br />
-          <p>Approved Count : {this.state.count_approved} </p>
-          <br />
-          <p>Reject Count : {this.state.count_reject} </p>
-          <br />
+
+
+
+
+
+
+
+
+
+
+
+    <div class="main-content">
+
+
+    <main>
+      <div class="cards">
+        <div class="card-single">
+          <div>
+            <h1>{ this.state.count_customers}</h1>
+            <span>Customers</span>
+          </div>
+          <div>
+            <span class="fas fa-users"></span>
+          </div>
         </div>
+        <div class="card-single">
+          <div>
+            <h1>{this.state.count_advertisements}</h1>
+            <span>Advertisements</span>
+          </div>
+          <div>
+            <span class="fas fa-clipboard-list"></span>
+          </div>
+        </div>
+        <div class="card-single">
+          <div>
+            <h1>{this.state.count_categories}</h1>
+            <span>Categories</span>
+          </div>
+          <div>
+            <span class="fas fa-shopping-cart"></span>
+          </div>
+        </div>
+        <div class="card-single">
+          <div>
+            <h1>{this.state.count_panding}</h1>
+            <span>Panding Advertisements </span>
+          </div>
+          <div>
+            <span class="fas fa-wallet"></span>
+          </div>
+        </div>
+         <div class="card-single">
+          <div>
+            <h1>{this.state.count_approved}</h1>
+            <span>Approved Advertisements </span>
+          </div>
+          <div>
+            <span class="fas fa-shopping-cart"></span>
+          </div>
+        </div>
+        <div class="card-single">
+          <div>
+            <h1>{this.state.count_reject}</h1>
+            <span>Reject Advertisements </span>
+          </div>
+          <div>
+            <span class="fas fa-wallet"></span>
+          </div>
+        </div>
+        <div class="card-single">
+          <div>
+            <h1></h1>
+            <span> </span>
+          </div>
+          <div>
+
+          </div>
+        </div>
+
       </div>
+
+
+
+    </main>
+  </div>
+
+
+
+
     );
   }
 }
+ {/* <p>
+            Advertisements Count :{this.state.count_advertisements} <br />
+          </p>
+
+          <p>
+            Customers Count : {this.state.count_customers}
+            <br />{" "}
+          </p>
+          <br />
+          <p>
+            Category Count : {this.state.count_categories}
+            <br />{" "}
+          </p>
+          <br />
+          <p>
+            Panding Count : {this.state.count_panding} <br />
+          </p>
+          <br />
+          <p>
+            Approved Count : {this.state.count_approved}
+            <br />
+          </p>
+          <br />
+          <p>
+            Reject Count : {this.state.count_reject}
+            <br />{" "}
+          </p>
+          <br /> */}

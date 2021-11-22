@@ -32,9 +32,6 @@
       "type": "password",
       "required": true
     },
-    "dob": {
-      "type": "date"
-    },
     "location": {
       "type": "string"
     },
@@ -65,6 +62,9 @@
     "transaction": {
       "via": "customers",
       "model": "transactions"
+    },
+    "DOB": {
+      "type": "date"
     }
   }
 }

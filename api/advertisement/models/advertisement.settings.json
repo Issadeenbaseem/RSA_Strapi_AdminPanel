@@ -46,8 +46,8 @@
       "required": true
     },
     "customer": {
-      "model": "customer",
-      "via": "advertisements"
+      "via": "advertisements",
+      "model": "customer"
     },
     "city": {
       "via": "advertisements",
